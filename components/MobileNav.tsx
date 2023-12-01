@@ -45,7 +45,7 @@ import { ThemeSwitcher } from "./Switcher.tsx";
 
 const MobileNav = () => {
   const [show, setShow] = useState(false);
-  const mobileNavRef = useRef(null);
+  const mobileNavRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: any) => {
