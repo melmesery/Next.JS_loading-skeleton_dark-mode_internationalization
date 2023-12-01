@@ -8,7 +8,7 @@ const Product = async () => {
 
   return (
     <div className="products">
-      {items?.map((item: Item) => (
+      {items.map((item: Item) => (
         <div className="product" key={item.id}>
           <div className="product-container">
             <Image
