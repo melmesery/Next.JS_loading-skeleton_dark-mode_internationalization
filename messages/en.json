@@ -1,0 +1,16 @@
+{
+    "site": {
+        "locale": "en",
+        "navigation": {
+            "dashboard": "Dashboard",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "title": "Test Next.Js Loading UI with skeleton, apply dark mode & internationalization",
+        "page": {
+            "dashboard": "Dashboard Page",
+            "about": "About Page",
+            "contact": "Contact Page"
+        }
+    }
+}

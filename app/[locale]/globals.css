@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white 
+  dark:bg-gradient-to-br 
+  dark:from-slate-900 
+  dark:to-slate-700;
+}
+main {
+  @apply  max-w-[85%] sm:max-w-[70%] mx-auto;
+}
+.head_title {
+  @apply text-xs sm:text-lg text-center font-bold tracking-widest pt-10 pb-5 
+  underline underline-offset-4 
+  dark:text-white;
+}
+
+/* Navbar */
+.navbar {
+  @apply hidden sm:flex items-center justify-around py-3 border-b dark:border-none;
+}
+.navbar_links {
+  @apply flex flex-row items-center gap-5 font-bold;
+}
+.navbar a {
+  @apply hover:underline hover:underline-offset-4;
+}
+.navbar_home {
+  @apply h-5 w-5 text-black dark:text-white;
+}
+
+/* MobileNav */
+.mobileNav_home {
+  @apply h-5 w-5 text-white text-center;
+}
+.mobileNav_bars {
+  @apply h-5 w-5 text-black dark:text-white font-bold;
+}
+.mobileNav_close {
+  @apply h-5 w-5 text-white text-center;
+}
+
+/* Products */
+.products {
+  @apply py-10 grid grid-cols-1 sm:grid-cols-3 gap-5;
+}
+.product {
+  @apply p-3 text-white bg-slate-100  
+  cursor-pointer
+  dark:border dark:border-gray-700 
+  dark:bg-slate-800;
+}
+.product_container {
+  @apply overflow-visible py-2;
+}
+.product_image {
+  @apply object-cover mx-auto mb-3;
+}
+.product_data {
+  @apply flex flex-col gap-2 items-start text-black
+  dark:text-white;
+}
+
+/* Switcher Button */
+.switcher {
+  @apply flex items-center p-2
+  justify-center mx-auto rounded-lg  
+  transition-colors;
+}
+.sun {
+  @apply h-5 w-5 
+  text-orange-300;
+}
+.moon {
+  @apply h-5 w-5 
+  text-slate-800;
+}
+
+/* Skeleton */
+
+.skeleton_image {
+  @apply bg-gray-400 dark:bg-slate-700 h-[250px] w-[100%] mb-2;
+}
+
+.skeleton_name {
+  @apply bg-gray-400 dark:bg-slate-700 h-2 w-[80%];
+}
+
+.skeleton_brand {
+  @apply bg-gray-400 dark:bg-slate-700 h-2 w-[20%];
+}
