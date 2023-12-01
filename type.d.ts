@@ -20,5 +20,6 @@ export type Item = {
 };
 
 export type Items = {
+    map(arg0: (item: Item) => import("react").JSX.Element): import("react").ReactNode;
     items: Item[];
 };
