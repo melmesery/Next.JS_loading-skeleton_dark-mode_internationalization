@@ -1,9 +1,9 @@
 import { useTranslations } from "next-intl";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import Product from "../../../components/Product.tsx";
 import Loading from "./loading.tsx";
 
-const page = () => {
+const Products = () => {
   const t = useTranslations("site");
   return (
     <div>
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Products;
