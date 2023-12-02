@@ -1,16 +1,14 @@
 const ProductSkeleton = async () => {
   return (
-    <div className="products">
+    <div className="products_container">
       {[...new Array(24)].map((_, index) => (
-        <div className="skeleton product" key={index}>
-          <div className="skeleton product-container">
-            <div
-              className="skeleton product_image_skeleton" 
-            />
+        <div key={index} className="products_details animate-pulse">
+          <div className="products_image_container">
+            <div className="skeleton_image" />
           </div>
-          <div className="product_data">
-            <small className="skeleton product_brand_skeleton"></small>
-            <h4 className="skeleton product_name_skeleton"></h4>
+          <div className="products_data">
+            <small className="skeleton_brand" />
+            <h4 className="skeleton_name" />
           </div>
         </div>
       ))}

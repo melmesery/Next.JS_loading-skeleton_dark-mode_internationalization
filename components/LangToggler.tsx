@@ -7,7 +7,7 @@ export function LangToggler() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-row gap-3 cursor-pointer">
+    <div className="langtoggler_container">
       <div onClick={() => router.push(pathname, { locale: "en" })}>English</div>
       <div onClick={() => router.push(pathname, { locale: "ar" })}>العربية</div>
     </div>

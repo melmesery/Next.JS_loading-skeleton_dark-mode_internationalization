@@ -1,16 +1,13 @@
 import { useTranslations } from "next-intl";
-import { Suspense } from "react";
-import Product from "../../components/Product.tsx";
-import Loading from "./loading.tsx";
 
 export default function Home() {
   const t = useTranslations("site");
   return (
     <main>
-      <h1 className="head_title">{t("title")}</h1>
-      <Suspense fallback={<Loading />}>
-        <Product />
-      </Suspense>
+      <div className="homepage_container">
+        <h1 className="homepage_address">{t("title")}</h1>
+        <h2 className="homepage_title">{t("page.home.title")}</h2>
+      </div>
     </main>
   );
 }

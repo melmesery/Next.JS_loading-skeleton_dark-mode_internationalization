@@ -3,7 +3,7 @@ import useTextDirection from "@/hooks/useTextDirection.tsx";
 import type { Metadata } from "next";
 import {
   El_Messiri as Arabic,
-  League_Spartan as English,
+  Gabarito as English,
 } from "next/font/google";
 import { notFound } from "next/navigation";
 import MobileNav from "@/components/MobileNav.tsx";

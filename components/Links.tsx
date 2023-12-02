@@ -7,8 +7,9 @@ const Links = () => {
   return (
     <>
       <Link href="/">
-        <HomeIcon className="navbar_home" />
+        <HomeIcon className="mobilenav_home" />
       </Link>
+      <Link href="/products">{t("navigation.products")}</Link>
       <Link href="/dashboard">{t("navigation.dashboard")}</Link>
       <Link href="/contact">{t("navigation.contact")}</Link>
       <Link href="/about">{t("navigation.about")}</Link>
