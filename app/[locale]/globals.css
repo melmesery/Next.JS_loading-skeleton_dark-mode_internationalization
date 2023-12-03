@@ -39,7 +39,7 @@ main {
 .homepage_address {
   @apply text-xs sm:text-lg text-center font-bold 
   tracking-widest pt-10 pb-5 
-  underline underline-offset-8
+  underline underline-offset-4
   dark:text-white;
 }
 .homepage_title {
@@ -57,7 +57,7 @@ main {
 .page_address {
   @apply text-xs sm:text-lg text-center font-bold 
   tracking-widest pt-10 pb-5 
-  underline underline-offset-8
+  underline underline-offset-4
   dark:text-white;
 }
 
